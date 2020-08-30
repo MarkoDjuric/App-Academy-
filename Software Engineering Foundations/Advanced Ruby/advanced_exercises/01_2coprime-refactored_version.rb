@@ -18,14 +18,14 @@ def coprime?(num_1, num_2)
     else
         
       return true
-      end
+    end
     
  end
 
-p coprime?(25, 12)    # => true
-p coprime?(7, 11)     # => true
-p coprime?(30, 9)     # => false
-p coprime?(6, 24)     # => false
+puts coprime?(25, 12)    # => true
+puts coprime?(7, 11)     # => true
+puts coprime?(30, 9)     # => false
+puts coprime?(6, 24)     # => false
 
 
 
