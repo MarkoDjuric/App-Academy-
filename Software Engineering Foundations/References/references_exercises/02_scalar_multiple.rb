@@ -7,9 +7,9 @@
 # to be the same before and after calling your method.
 
 def scalar_multiple!(array, multiplier)
- mutate_array  =  array   #drugacije povezivanje(nizova) na vrednost od varijable sa drugim vrednostima
+ mutate_array  =  array  
 
-  array.each_with_index { |el, idx|  mutate_array[idx]*= multiplier }
+  array.each_with_index { |el, idx|  mutate_array[idx] *= multiplier }
 
 end
 
