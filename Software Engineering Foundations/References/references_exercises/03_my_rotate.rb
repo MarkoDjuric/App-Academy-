@@ -12,7 +12,7 @@
 
 def my_rotate!(arr, atm)
 
-  if arr[atm]>arr[atm-1]
+  if arr[atm] > arr[atm-1]
     
     num = arr.length
     
