@@ -13,8 +13,10 @@
 def my_rotate!(arr, atm)
 
   if arr[atm]>arr[atm-1]
-    num=arr.length
-    arr.unshift(arr[atm..-1]+arr[0...atm]).pop(num)
+    
+    num = arr.length
+    
+    arr.unshift(arr[atm..-1] + arr[0...atm]).pop(num)
 
   end
 
