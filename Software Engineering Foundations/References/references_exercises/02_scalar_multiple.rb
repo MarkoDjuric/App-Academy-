@@ -9,7 +9,7 @@
 def scalar_multiple!(array, multiplier)
  mutate_array  =  array  
 
-  array.each_with_index { |el, idx|  mutate_array[idx] *= multiplier }
+  array.each { |el| el *  multiplier }
 
 end
 
