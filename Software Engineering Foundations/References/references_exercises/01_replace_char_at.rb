@@ -8,7 +8,8 @@
 
 def replace_char_at!(str, char, idx)
 
-  str[idx]=char
+  str[idx] =c har
+  
   return str
 end
 
