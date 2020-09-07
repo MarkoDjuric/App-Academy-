@@ -13,6 +13,8 @@ end
 
 #drugi nacin, return ide ispred if da ne bi zaustavio petlju na prvom zadovoljenom uslovu
 
+#second solution :
+
  def is_sorted2(arr)
     (0...arr.length-1).each do |idx|
       return false if arr[0] > arr[idx + 1]
