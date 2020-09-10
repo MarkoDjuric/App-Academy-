@@ -41,7 +41,7 @@ puts
 print element_times_index([1, 1, 1, 1, 1, 1]) # => [0, 1, 2, 3, 4, 5]
 
 
-3. Even Nums
+3.Even Nums
 #Write a method even_nums(max) that takes in a number max 
 #and returns an array containing all even numbers from 0 to max.
 
@@ -67,7 +67,7 @@ puts
 print even_nums(5)  # => [0, 2, 4]
 
 
-15.Range
+4.Range
 #Write a method range(min, max) that takes in two numbers min and max. 
 #The function should return an array containing all numbers from min to max inclusive.
 
@@ -91,7 +91,7 @@ puts
 print range(13, 20) # => [13, 14, 15, 16, 17, 18, 19, 20]
 
 
-16.Odd Range
+5.Odd Range
 #Write a method odd_range(min, max) that takes in two numbers min and max. 
 #The method should return an array containing all odd numbers from min to max (inclusive).
 
@@ -118,7 +118,7 @@ print odd_range(3, 7)   # => [3, 5, 7]
 
 
 
-17.Reverse Range
+6.Reverse Range
 #Write a method reverse_range(min, max) that takes in two numbers min and max. 
 #The function should return an array containing all numbers from min to max in reverse order. 
 #The min and max should be excluded from the array.
