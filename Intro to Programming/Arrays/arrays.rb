@@ -176,7 +176,7 @@ puts
 print factors_of(16)  # => [1, 2, 4, 8, 16]
 
 
-20. Select Odds
+8.Select Odds
 #Write a method select_odds(numbers) that takes in an array of numbers and 
 #returns a new array containing the odd numbers of the original array.
 
@@ -204,7 +204,7 @@ puts
 print select_odds([2, 4, 6])            # => []
 
 
-21.Select Long Words
+9.Select Long Words
 #Write a method select_long_words(words) that takes in an array of words 
 #and returns a new array containing all of the words of the original array that are longer than 4 characters.
 
@@ -231,7 +231,7 @@ puts
 print select_long_words(["keep", "coding"])                               # => ["coding"]
 
 
-22.Sum Elements
+10.Sum Elements
 #Write a method sum_elements(arr1, arr2) that takes in two arrays. 
 #The method should return a new array containing the results of adding together corresponding elements of the original arrays. You can assume the arrays have the same length.
 
@@ -259,7 +259,7 @@ puts
 print sum_elements(["cat", "pizza", "boot"], ["dog", "pie", "camp"]) # => ["catdog", "pizzapie", "bootcamp"]
 
 
-23.Fizz Buzz
+11.Fizz Buzz
 #Write a method fizz_buzz(max) that takes in a number max and returns an array 
 #containing all numbers greater than 0 and less than max that are divisible by either 4 or 6, but not both
 
