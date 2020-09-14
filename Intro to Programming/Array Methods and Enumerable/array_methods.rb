@@ -158,7 +158,7 @@ puts is_valid_email("az@email")         # => false
 
 
 
-29.Reverse Words
+5.Reverse Words
 #Write a method reverse_words that takes in a sentence string and returns the sentence 
 #with the order of the characters in each word reversed. 
 #Note that we need to reverse the order of characters in the words, do not reverse the order of words in the sentence.
@@ -195,7 +195,7 @@ puts reverse_words('simplicity is prerequisite for reliability') # => 'yticilpmi
 
 
   
-29.Reverse Words (SECOND SOLUTION)
+5(b).Reverse Words (SECOND SOLUTION)
 #Write a method reverse_words that takes in a sentence string and returns the sentence 
 #with the order of the characters in each word reversed. 
 #Note that we need to reverse the order of characters in the words, do not reverse the order of words in the sentence.  
