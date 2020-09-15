@@ -207,9 +207,8 @@ def reverse_words(sent)
   
   
      array.each_with_index  do |word, i|
-       reversed =  reversed_arr(word)
-       string << reversed
-   
+        reversed =  reversed_arr(word)
+        string << reversed
      end
   
   return p string.join(" ")
@@ -227,3 +226,6 @@ end
 
 puts reverse_words('keep coding') # => 'peek gnidoc'
 puts reverse_words('simplicity is prerequisite for reliability') # => 'yticilpmis si etisiuqererp rof ytilibailer'
+  
+  
+  
