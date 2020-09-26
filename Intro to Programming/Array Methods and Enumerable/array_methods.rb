@@ -289,7 +289,7 @@ puts pig_latin_word("trash")   # => "ashtray"
   
   
   
-33.Combinations
+8.Combinations
 #Write a method combinations that takes in an array of unique elements, 
 #the method should return a 2D array representing all possible combinations of 2 elements of the array.  
   
@@ -312,6 +312,32 @@ puts
 
 print combinations([0, 1, 2, 3]); # => [ [ 0, 1 ], [ 0, 2 ], [ 0, 3 ], [ 1, 2 ], [ 1, 3 ], [ 2, 3 ] ]
 puts  
+
+
+9.Opposite Count
+#Write a method opposite_count that takes in an array of unique numbers. 
+#The method should return the number of pairs of elements that sum to 0.
+
+
+def opposite_count(nums)
+    counter = 0
+  
+  nums.each_with_index do |num1, idx1|
+    nums.each_with_index do |num2, idx2| 
+      
+      if idx2 > idx1 && num1 === -1 * num2
+         counter += 1
+        
+      end
+      
+    end
+  end
+  
+ return counter
+end
+
+puts opposite_count([ 2, 5, 11, -5, -2, 7 ]) # => 2
+puts opposite_count([ 21, -23, 24 -12, 23 ]) # => 1
   
   
   
