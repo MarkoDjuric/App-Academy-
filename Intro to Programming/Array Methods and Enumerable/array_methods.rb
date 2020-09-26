@@ -338,6 +338,30 @@ end
 
 puts opposite_count([ 2, 5, 11, -5, -2, 7 ]) # => 2
 puts opposite_count([ 21, -23, 24 -12, 23 ]) # => 1
+
+
+10.Two D Sum
+#Write a method two_d_Sum that takes in a two dimensional array and returns the sum of all elements in the array.
+
+
+def two_d_sum(arr)
+  counter = 0
+  
+  arr.each_with_index do |arr1, idx1|
+    arr1.each_with_index do |arr2, idx2|
+      
+      counter += arr2
+      
+    end
+  end
+  
+return counter
+end
+
+
+puts two_d_sum([ [4, 5],[1, 3, 7, 1]])    # => 21
+puts two_d_sum([[3, 3],[2],[2, 5]])   # => 15
+
   
   
   
