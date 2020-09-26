@@ -15,6 +15,7 @@ puts to_initials("Michaela Yamamoto")   # => "MY"
 puts to_initials("Mary La Grange")      # => "MLG"
 
 
+
 25.First in Array
 #Write a method first_in_array that takes in an array and two elements, 
 #the method should return the element that appears earlier in the array.
@@ -34,6 +35,7 @@ end
 
 puts first_in_array(["a", "b", "c", "d"], "d", "b"); # => "b"
 puts first_in_array(["cat", "bird" ,"dog", "mouse" ], "dog", "mouse"); # => "dog"
+
 
 
 2.Format Name
@@ -93,10 +95,10 @@ puts is_valid_name("Robert Downey Jr") # => true
 puts is_valid_name("ROBERT DOWNEY JR") # => false
 
 
+
 4.Is Valid Email
 #Write a method is_valid_email that takes in a string and returns a boolean 
 #indicating whether or not it is a valid email address.
-
 
 
 # For simplicity, we'll consider an email valid when it satisfies all of the following:
@@ -226,6 +228,8 @@ end
 
 puts reverse_words('keep coding') # => 'peek gnidoc'
 puts reverse_words('simplicity is prerequisite for reliability') # => 'yticilpmis si etisiuqererp rof ytilibailer'
+ 
+  
   
 6.Rotate Array
 #Write a method rotate_array that takes in an array and a number. The method should return the array after rotating the elements the specified number of times. 
