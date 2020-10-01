@@ -28,7 +28,7 @@ def word_lengths(sentence)
   noviObjekat = Hash.new(0)
   strArr.each do |elem|
     
-    noviObjekat[elem]+=elem.length
+    noviObjekat[elem] += elem.length
     
   end
   
@@ -106,7 +106,7 @@ def element_count(arr)
   count = Hash.new(0)
   
   arr.each do |elem|
-     count[elem]+=1
+     count[elem] += 1
   end
  return  count
 end
@@ -125,7 +125,7 @@ def select_upcase_keys(hash)
   
   hash.each do |key, value|
    if key === key.upcase
-    obj[key]=value
+    obj[key] = value
    end
   end
   return obj
@@ -158,7 +158,7 @@ def hand_score(hand)
   
 counter=0
   hand.each_char do  |char| 
-     counter+=object[char] 
+     counter += object[char] 
 end
   return counter
 end
