@@ -174,7 +174,7 @@ puts hand_score("jJka") #=> 9
 
 def frequent_letters(string)
   counter = Hash.new(0)
-  arr=[]
+  arr = []
   string.each_char {  |char| counter[char] += 1 }
 
  s = counter.sort_by { |k,v| v }
@@ -190,6 +190,8 @@ print frequent_letters('mississippi') #=> ["i", "s"]
 puts
 print frequent_letters('bootcamp') #=> []
 puts
+
+
 
 
 
