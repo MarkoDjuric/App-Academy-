@@ -175,14 +175,19 @@ puts hand_score("jJka") #=> 9
 def frequent_letters(string)
   counter = Hash.new(0)
   arr = []
+  
   string.each_char {  |char| counter[char] += 1 }
 
  s = counter.sort_by { |k,v| v }
+  
  s.each do |el|
-    if el[1] > 2
-      arr << el[0]
+   
+   if el[1] > 2
+     arr << el[0]
+     
    end
  end
+  
   return arr
 end
 
