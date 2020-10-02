@@ -183,6 +183,7 @@ def frequent_letters(string)
  s.each do |el|
    
    if el[1] > 2
+     
      arr << el[0]
      
    end
@@ -195,6 +196,8 @@ print frequent_letters('mississippi') #=> ["i", "s"]
 puts
 print frequent_letters('bootcamp') #=> []
 puts
+
+
 
 
 
