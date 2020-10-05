@@ -86,7 +86,6 @@ def o_words(sentence)
   
 o_words = sentence_arr.select { |word| word.include?('o')   }
 
-  
   print o_words
 end
 
