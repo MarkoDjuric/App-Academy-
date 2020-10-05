@@ -73,4 +73,26 @@ end
 puts yell_sentence("I have a bad feeling about this") #=> "I! HAVE! A! BAD! FEELING! ABOUT! THIS!"
 
 
+52.o Words
+#Write a method o_words that takes in a sentence string and returns an array of the words that contain an "o".
+#Use select in your solution!
+
+
+def o_words(sentence)
+  
+  sentence_arr = sentence.split(" ")
+  print sentence_arr
+  puts
+  
+o_words = sentence_arr.select { |word| word.include?('o')   }
+
+  
+  print o_words
+end
+
+print o_words("How did you do that?") #=> ["How", "you", "do"]
+puts
+
+
+
 
