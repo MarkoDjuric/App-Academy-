@@ -39,7 +39,7 @@ puts
 def map_by_key(arr, key)
   
   new_arr = arr.map { |k| k[key]  }
-print new_arr
+  print new_arr
 end
 
 locations = [
