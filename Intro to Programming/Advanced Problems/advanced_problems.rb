@@ -37,7 +37,6 @@ puts
 
 
 def map_by_key(arr, key)
-  
   new_arr = arr.map { |k| k[key]  }
   print new_arr
 end
@@ -61,12 +60,11 @@ puts
 
 def yell_sentence(sent)
   
-  
-  array_word = sent.split(" ")
+   array_word = sent.split(" ")
    
-    sentence =  array_word.map { |word| word.upcase + "!"  }
+   sentence =  array_word.map { |word| word.upcase + "!"  }
   
-    print  sentence.join(" ")
+   sentence.join(" ")
   
 end
 
