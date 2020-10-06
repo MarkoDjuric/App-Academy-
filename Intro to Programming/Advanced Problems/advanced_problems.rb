@@ -100,12 +100,9 @@ puts
 
 
 def last_index(str, char)
-
- kontra_str =  str.reverse
-  
-   index = kontra_str.index(char)
-  
-  print kontra_str.length-1 - index
+  rever_str =  str.reverse
+  index = rever_str.index(char)
+  rever_str.length-1 - index
 end
 
 puts last_index("octagon", "o")    #=> 5
