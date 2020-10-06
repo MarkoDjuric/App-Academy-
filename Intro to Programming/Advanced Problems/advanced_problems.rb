@@ -111,6 +111,29 @@ puts last_index("abca", "a")       #=> 3
 puts last_index("mississipi", "i") #=> 9
 
 
+54.Most Vowels
+#Write a method most_vowels that takes in a sentence string and returns the word of the sentence that contains the most vowels.
 
+
+def most_vowels(word)
+  base_count = 0
+  vowels = "aeiou"
+  str = ''
+  splited = word.split(" ")
+
+  
+  splited.each_with_index do |char, i|
+   calculated = numbers_of_vowels(char)
+    
+    if calculated > base_count
+      
+      base_count = calculated
+      str = char
+    end
+    
+  end
+  
+  return p str
+end
 
 
