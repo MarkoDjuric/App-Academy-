@@ -123,15 +123,12 @@ def most_vowels(word)
 
   
   splited.each_with_index do |char, i|
-   calculated = numbers_of_vowels(char)
-    
-    if calculated > base_count
-      
-      base_count = calculated
-      str = char
+    calculated = numbers_of_vowels(char)
+     if calculated > base_count
+         base_count = calculated
+         str = char
+     end
     end
-    
-  end
   
   return p str
 end
