@@ -53,7 +53,7 @@ print map_by_key(locations, "city") #=> ["New York City", "San Francisco", "Port
 puts
 
 
-50.Yell Sentence
+3.Yell Sentence
 #Write a method yell_sentence that takes in a sentence string and returns a new sentence where every word is yelled. 
 #See the examples. Use map to solve this.
 
@@ -71,7 +71,7 @@ end
 puts yell_sentence("I have a bad feeling about this") #=> "I! HAVE! A! BAD! FEELING! ABOUT! THIS!"
 
 
-52.o Words
+4.o Words
 #Write a method o_words that takes in a sentence string and returns an array of the words that contain an "o".
 #Use select in your solution!
 
@@ -92,7 +92,7 @@ puts
 
 
 
-53.Last Index
+5.Last Index
 #Write a method last_index that takes in a string and a character. 
 #The method should return the last index where the character can be found in the string.
 
@@ -109,7 +109,7 @@ puts last_index("abca", "a")       #=> 3
 puts last_index("mississipi", "i") #=> 9
 
 
-54.Most Vowels
+6.Most Vowels
 #Write a method most_vowels that takes in a sentence string and returns the word of the sentence that contains the most vowels.
 
 
@@ -130,5 +130,6 @@ def most_vowels(word)
   
      return p str
    end
+
 
 
