@@ -264,8 +264,8 @@ def factors_array(el)
   arr = []
    
   (2...el).each do |n|
-     if  el % 2 != 0 
-      arr << el
+    if  el % 2 != 0 
+     arr << el
     elsif el % n == 0
      arr << n
     end
