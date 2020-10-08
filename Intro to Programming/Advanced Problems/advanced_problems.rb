@@ -203,3 +203,41 @@ puts prime?(11) #=> true
 puts prime?(4)  #=> false
 puts prime?(9)  #=> false
 puts prime?(-5) #=> false
+
+
+Pick Primes
+#Write a method pick_primes that takes in an array of numbers and returns a new array containing only the prime numbers.
+
+def pick_primes(numbers) 
+    
+   return prime_nuimbers = numbers.select do |el| 
+     
+   prime?(el)
+     
+   end
+end
+
+
+def prime?(num)
+  if num < 2
+    return false
+  end
+
+  (2...num).each do |factor|
+     (2...num).each do |f|
+    
+        if factor * f == num
+          return false
+        end
+      
+      end
+   end
+ 
+  return true
+end
+
+print pick_primes([2, 3, 4, 5, 6]) #=> [2, 3, 5]
+puts
+print pick_primes([101, 20, 103, 2017]) #=> [101, 103, 2017]
+puts
+
