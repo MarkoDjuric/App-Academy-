@@ -380,5 +380,57 @@ print fibonacci(8) # => [1, 1, 2, 3, 5, 8, 13, 21]
 puts
 
 
-14.
+14.Caesar Cipher
+#Write a method caesar_cipher that takes in a string and a number. 
+#The method should return a new string where every character of the original is shifted num characters in the alphabet
+
+
+# Feel free to use this variable:
+# alphabet = "abcdefghijklmnopqrstuvwxyz"
+
+def caesar_cipher(str, num)
+   final_str = ''
+  
+   alphabet = "abcdefghijklmnopqrstuvwxyz"
+
+   alphastr = alphabet[alphabet.index('y')..-1] + alphabet[0..-1]
+
+  
+str.each_char.with_index do |el, idx|
+  final_str +=   alphastr[alphastr.index(el) + num]
+  end
+
+  return  final_str 
+end
+
+puts caesar_cipher("apple", 1)    #=> "bqqmf"
+puts caesar_cipher("bootcamp", 2) #=> "dqqvecor"
+puts caesar_cipher("zebra", 4)    #=> "difve"
+
+
+62.Double Letter Count
+#Write a method that takes in a string and returns the number of times that the same letter repeats twice in a row.
+  
+
+
+def double_letter_count(string)
+  p arr = string.split("")
+  
+   counter = 0
+   arr.each_with_index do |char, i|
+  
+      if char == arr[i+1]
+        counter += 1
+       
+      end
+    
+        i += 1
+   end
+ 
+   return counter
+end
+
+puts double_letter_count("the jeep rolled down the hill") #=> 3
+puts double_letter_count("bootcamp") #=> 1
+
 
