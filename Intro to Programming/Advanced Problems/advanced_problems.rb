@@ -408,7 +408,7 @@ puts caesar_cipher("bootcamp", 2) #=> "dqqvecor"
 puts caesar_cipher("zebra", 4)    #=> "difve"
 
 
-62.Double Letter Count
+15.Double Letter Count
 #Write a method that takes in a string and returns the number of times that the same letter repeats twice in a row.
   
 
@@ -432,5 +432,36 @@ end
 
 puts double_letter_count("the jeep rolled down the hill") #=> 3
 puts double_letter_count("bootcamp") #=> 1
+
+
+
+16.Adjacent Sum
+#Write a method adjacent_sum that takes in an array of numbers and returns a new array containing the sums of adjacent numbers in the original array. See the examples.
+
+
+
+def adjacent_sum(arr)
+  con = 0
+  counter = []
+  
+  arr.each_with_index do |num, i|
+     f = arr[i]
+     s = arr[i+1]
+    
+    if con < arr.length-1
+       counter <<  f + s
+       con +=1
+    end
+ 
+  end 
+  
+   return counter
+end
+
+print adjacent_sum([3, 7, 2, 11]) #=> [10, 9, 13], because [ 3+7, 7+2, 2+11 ]
+puts
+print adjacent_sum([2, 5, 1, 9, 2, 4]) #=> [7, 6, 10, 11, 6], because [2+5, 5+1, 1+9, 9+2, 2+4]
+puts
+
 
 
